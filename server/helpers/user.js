@@ -9,7 +9,7 @@ class UserHelper {
   }
 
   saveUser = (email, password, isAdmin) => {
-    const user = new this.Model(email, password, isAdmin);
+    const user = new this.Model({ email, password, isAdmin });
     return user.save();
   };
 
