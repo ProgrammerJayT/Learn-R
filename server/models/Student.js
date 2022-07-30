@@ -18,7 +18,7 @@ const Student = new mongoose.Schema({
   },
   preferredLanguage: {
     type: String,
-    required: true,
+    required: false,
   },
 });
 
