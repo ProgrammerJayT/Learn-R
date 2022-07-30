@@ -3,25 +3,18 @@
  */
 import Student from '../models/Student';
 
-/**
- * C
- * R
- * U
- * D
- */
 class StudentHelper {
   constructor(model) {
     this.Model = model;
   }
 
-  /* Creating a new student and saving it to the database. */
-  saveStudent = (id, firstName, lastName, educationLevel, preferredLanguage) => {
+  saveStudent = (id, firstname, lastname, education, language) => {
     const student = new this.Model({
       _id: id,
-      firstName,
-      lastName,
-      educationLevel,
-      preferredLanguage,
+      firstName: firstname,
+      lastName: lastname,
+      educationLevel: education,
+      preferredLanguage: language,
     });
 
     return student.save();
