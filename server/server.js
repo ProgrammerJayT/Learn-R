@@ -16,7 +16,7 @@ import studentRoutes from './routes/student.routes';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5500;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
