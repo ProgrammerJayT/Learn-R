@@ -11,7 +11,7 @@ const config = {
     jwtKey: process.env.JWT_KEY,
   },
   database: {
-    mongoUrl: process.env.MONGO_URL,
+    mongoUrl: process.env.MONGO_URL_PROD,
     mysql: {
       database: process.env.MYSQL_DATABASE,
       username: process.env.MYSQL_USERNAME,
