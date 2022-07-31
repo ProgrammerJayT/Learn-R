@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dashboard;
 use App\Http\Controllers\FindTutor;
+use App\Http\Controllers\Courses;
+use App\Http\Controllers\Engagement;
 
 
 /*
@@ -22,3 +24,5 @@ Route::get('/', function () {
 
 Route::get('/StudentDashboard', [Dashboard::class, 'studentDashboard']);
 Route::get('/FindTutor', [FindTutor::class, 'showMap']);
+Route::get('/Courses', [Courses::class, 'allCourses']);
+Route::get('/Engage', [Engagement::class, 'engagement']);
