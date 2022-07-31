@@ -5,6 +5,8 @@ use App\Http\Controllers\Dashboard;
 use App\Http\Controllers\FindTutor;
 use App\Http\Controllers\Courses;
 use App\Http\Controllers\Engagement;
+use App\Http\Controllers\Science;
+use App\Http\Controllers\Webcam;
 
 
 /*
@@ -26,3 +28,5 @@ Route::get('/StudentDashboard', [Dashboard::class, 'studentDashboard']);
 Route::get('/FindTutor', [FindTutor::class, 'showMap']);
 Route::get('/Courses', [Courses::class, 'allCourses']);
 Route::get('/Engage', [Engagement::class, 'engagement']);
+Route::get('/Science', [Science::class, 'index']);
+Route::get('/Webcam', [Webcam::class, 'index']);
