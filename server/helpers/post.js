@@ -1,7 +1,6 @@
 import { Op } from 'sequelize';
 import { v4 as uuidv4 } from 'uuid';
-// eslint-disable-next-line import/extensions
-import Post from '../models/Post.js';
+import Post from '../models/Post';
 
 class PostHelper {
   constructor(model) {
