@@ -6,6 +6,7 @@ const Post = database.sequelize.define('Post', {
     type: DataTypes.UUID,
     allowNull: false,
     unique: true,
+    primaryKey: true,
   },
   authorId: {
     type: DataTypes.UUID,
@@ -15,6 +16,13 @@ const Post = database.sequelize.define('Post', {
     type: DataTypes.STRING,
     allowNull: false,
   },
+}, {
+  timestamps: true,
 });
+
+// eslint-disable-next-line no-unused-expressions
+(async () => {
+  await Post.sync();
+})();
 
 export default Post;
