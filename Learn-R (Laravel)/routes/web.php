@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dashboard;
+use App\Http\Controllers\FindTutor;
 
 
 /*
@@ -20,3 +21,4 @@ Route::get('/', function () {
 });
 
 Route::get('/StudentDashboard', [Dashboard::class, 'studentDashboard']);
+Route::get('/FindTutor', [FindTutor::class, 'showMap']);

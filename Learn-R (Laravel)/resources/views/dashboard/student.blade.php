@@ -31,12 +31,12 @@
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link active" href="dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="course_menu.html"><i class="fas fa-user"></i><span>Courses</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="engagement.html"><i class="fas fa-user"></i><span>Engagement</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>Find a tutor</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="far fa-user-circle"></i><span>Report</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Certificates</span></a></li>
+                    <li class="nav-item"><a class="nav-link active"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-user"></i><span>Courses</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-user"></i><span>Engagement</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="FindTutor"><i class="fas fa-table"></i><span>Find a tutor</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="far fa-user-circle"></i><span>Report</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-user-circle"></i><span>Certificates</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
