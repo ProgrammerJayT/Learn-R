@@ -12,6 +12,12 @@ const config = {
   },
   database: {
     mongoUrl: process.env.MONGO_URL,
+    mysql: {
+      database: process.env.MYSQL_DATABASE,
+      username: process.env.MYSQL_USERNAME,
+      password: process.env.MYSQL_PASSWORD,
+      host: process.env.MYSQL_HOST,
+    },
   },
   mail: {
     nodemailer: {
