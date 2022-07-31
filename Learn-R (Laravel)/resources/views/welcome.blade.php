@@ -44,7 +44,7 @@
                                             <div class="custom-control custom-checkbox small">
                                                 <div class="form-check"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-1"><label class="form-check-label custom-control-label" for="formCheck-1">Remember Me</label></div>
                                             </div>
-                                        </div><a class="btn btn-primary d-block btn-user w-100" role="button" href="Dashboard">Login</a>
+                                        </div><a class="btn btn-primary d-block btn-user w-100" role="button" href="StudentDashboard">Login</a>
                                         <hr>
                                     </form>
                                     <div class="text-center"><a class="small" href="">Forgot Password?</a></div>
