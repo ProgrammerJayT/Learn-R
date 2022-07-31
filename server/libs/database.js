@@ -2,6 +2,7 @@
  * @desc -
  */
 import mongoose from 'mongoose';
+import { Sequelize } from 'sequelize';
 import config from '../config/config';
 
 const database = {
@@ -9,6 +10,15 @@ const database = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   }),
+  sequelize: new Sequelize(
+    config.database.mysql.database,
+    config.database.mysql.username,
+    config.database.mysql.password,
+    {
+      host: config.database.mysql.host,
+      dialect: 'mariadb',
+    },
+  ),
 };
 
 export default database;
