@@ -11,6 +11,7 @@ import ip from 'ip';
 // eslint-disable-next-line import/extensions
 import { errorLog, successLog } from './utils/logger.js';
 import database from './libs/database';
+import postRoutes from './routes/post.routes';
 import studentRoutes from './routes/student.routes';
 
 dotenv.config();
@@ -26,7 +27,7 @@ app.use(
   cors({
     origin: '*',
     credentials: true,
-  }),
+  })
 );
 
 database.mongo
@@ -37,6 +38,17 @@ database.mongo
     errorLog.error(`MongoDB connection error: ${MongoError}`);
   });
 
+database.sequelize
+  .authenticate()
+  .then(() => {
+    successLog.info('Connected to MariDB');
+  })
+  .catch((SequelizeError) => {
+    errorLog.error(`Mysql connection error: ${SequelizeError}`);
+  });
+
+// ROUTES
+app.use('/api/post', postRoutes);
 app.use('/api/student', studentRoutes);
 
 app.listen(PORT, () => {
